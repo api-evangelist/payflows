@@ -1,8 +1,24 @@
 aid: payflows
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/payflows.png
 name: payflows
-description: payflows is a company surfaced as a portfolio company of balderton-capital, ribbit-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Payflows is an AI-native financial operations platform that unifies procurement, treasury,
+  and accounting into one agentic workspace for finance teams. Its product suites span Apollo (procurement
+  from purchase request to receipt), Vera (vendor and contract management), Athena (accounting and AP
+  automation from AP to tax reporting), and Metis (treasury from payment to bank reconciliation), with
+  spend analytics, cashflow forecasting, global payments, and risk management. Payflows integrates with
+  major ERP, banking, payment, and expense systems. It was surfaced as a portfolio company of Balderton
+  Capital and Ribbit Capital and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/payflows/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Finance
+- Procurement
+- Treasury
+- Accounting
+- Payments
+- FinOps
+- AP Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,23 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/payflows-domain-security.yml
 - type: Website
   url: https://www.payflows.io/
+- type: Blog
+  url: https://www.payflows.io/blog-and-articles
+- type: SignUp
+  url: https://app.payflows.io/login
+x-links-observed:
+- type: Integrations
+  url: https://www.payflows.io/integrations
+- type: About
+  url: https://www.payflows.io/about-us
+- type: Careers
+  url: https://www.payflows.io/careers
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
