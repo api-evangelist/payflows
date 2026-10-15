@@ -16,3 +16,31 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: payflows-dgfip-plateformes-agreees-france-e-invoicing-reform
+  label: DGFiP plateformes agreees (France e-invoicing reform)
+  partner_name: DGFiP plateformes agreees (France e-invoicing reform)
+  category: French e-invoicing platform
+  type: register
+  channel: standard-directory
+  evidence: https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: DGFiP liste des plateformes agreees (impots.gouv.fr)
+    spec_file: null
+    standard: France e-invoicing (plateforme agreee)
+    role: plateforme-agreee
+    registered_name: PAYFLOWS
+    website: https://payflows.io
+    matched_domain: payflows.io
+    matched_by: domain
+    certified_products:
+    - product: plateforme agreee (PA)
+      lapsed: false
+      registered: '2026-04-15'
+    signal_note: certified_products = the immatriculation (one per operator); an operator awaiting the interop tests
+      is participation only
+    detected_by: sweep-einvoicing-tax.py
+    detected: '2026-10-15'
+  status: not-a-workflow
+  arazzo: null

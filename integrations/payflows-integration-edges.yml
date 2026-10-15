@@ -1,6 +1,9 @@
 generated: '2026-10-14'
 method: searched
 checked:
+- https://peppol.org/members/peppol-certified-service-providers/
+- https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees
+- https://www.streamlinedsalestax.org/certified-service-providers/certified-service-providers-list
 - okta/integrations/okta-integration-edges.yml
 source:
 - okta/integrations/okta-integration-edges.yml
@@ -26,3 +29,31 @@ edges:
   - OKTA_VERIFIED
   features:
   - SAML
+- partner_name: DGFiP plateformes agreees (France e-invoicing reform)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees
+  category: French e-invoicing platform
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: DGFiP liste des plateformes agreees (impots.gouv.fr)
+    spec_file: null
+    standard: France e-invoicing (plateforme agreee)
+    role: plateforme-agreee
+    registered_name: PAYFLOWS
+    website: https://payflows.io
+    matched_domain: payflows.io
+    matched_by: domain
+    certified_products:
+    - product: plateforme agreee (PA)
+      lapsed: false
+      registered: '2026-04-15'
+    signal_note: certified_products = the immatriculation (one per operator); an operator awaiting the interop tests
+      is participation only
+    detected_by: sweep-einvoicing-tax.py
+    detected: '2026-10-15'
+  detected_by: sweep-einvoicing-tax.py
+  first_seen: '2026-10-15'
